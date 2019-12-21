@@ -1,0 +1,93 @@
+nav
+    position: absolute
+    text-align: center
+    width: 100%
+    padding-bottom: 10rem
+    ul
+        overflow: hidden
+        list-style-type: none
+        margin: auto
+        display: inline-block
+        border-bottom-right-radius: 23%
+        border-bottom-left-radius: 23%
+        @media screen and ( max-width: 767px )
+            display: block
+            
+            li
+                display: block
+                    
+        a > li
+            display: inline-block
+            padding: 10px
+            margin-left: -4px
+            @media screen and ( min-width: 1023px )
+                
+                &:first-of-type
+                    padding-left: 20px
+                &:last-of-type
+                    padding-right: 20px
+            
+            &:hover
+                background: #acbcd1
+                color: white
+
+.hamburger
+    display: none
+    @media screen and ( max-width: 767px )
+        display: block
+        margin: 6%
+        position: absolute
+
+.bar1, .bar2, .bar3
+    background: white
+    width: 25px
+    height: 2px
+    margin: 3.5px
+
+.logo-img
+    margin: auto
+    img
+        width: 30%
+    @media screen and ( max-width: 767px )
+        width: 80%
+        margin: auto
+        img
+            width: 70%
+
+.sm-only
+    @media screen and ( min-width: 1024px )
+        display: none
+        visibility: hidden
+        width: 0
+    @media screen and ( min-width: 768px ) and (max-width: 1023px)
+        display: none
+        width: 0
+        visibility: hidden
+    @media screen and ( max-width: 767px )
+        visibility: visible
+        display: block
+        font-size: 1.4rem
+        padding: 10px
+
+.float-logo
+    display: block
+    backface-visibility: hidden
+    position: absolute
+    width: 5rem
+    margin: 3%
+
+
+.lg-md-only
+    @media screen and ( min-width: 1024px )
+        visibility: visible
+        display: block
+        
+    @media screen and ( min-width: 768px ) and (max-width: 1023px)
+        visibility: visible
+        display: block
+        
+    @media screen and ( max-width: 767px )
+        display: none
+        visibility: hidden
+        width: 0
+        
