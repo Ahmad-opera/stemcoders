@@ -1,3 +1,13 @@
+*
+    transition: .4s
+    text-rendering: geometricPrecision
+    shape-rendering: geometricPrecision
+    image-rendering: auto
+    
+
+a
+    user-select: none
+
 nav
     position: absolute
     text-align: center
@@ -17,6 +27,7 @@ nav
                 display: block
                 padding: 10px    
     @media screen and ( min-width: 1024px )
+        z-index: -20
         ul
             overflow: hidden
             list-style-type: none

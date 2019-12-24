@@ -1,3 +1,18 @@
+* {
+  -webkit-transition: .4s;
+  transition: .4s;
+  text-rendering: geometricPrecision;
+  shape-rendering: geometricPrecision;
+  image-rendering: auto;
+}
+
+a {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
 nav {
   position: absolute;
   text-align: center;
@@ -25,6 +40,9 @@ nav {
 }
 
 @media screen and (min-width: 1024px) {
+  nav {
+    z-index: -20;
+  }
   nav ul {
     overflow: hidden;
     list-style-type: none;
