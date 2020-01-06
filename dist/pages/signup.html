@@ -29,8 +29,8 @@
 
         <div class="bg-orange-100 shadow py-6 px-4 text-center ">
 
-            <div class="lg:w-1/5 shadow-md hover:shadow-xl max-w-sm text-gray-600">
-                <h2 class="p-2 font-bold">Sign Up</h2>
+            <div class="lg:w-1/5 shadow-md hover:shadow-xl sm:max-w-xxs xl:max-w-xxs text-gray-600">
+                <h2 class="p-2 font-bold">Registation form</h2>
                 <input type="text" class="py-2 bg-gray-200 rounded shadow-inner px-2" placeholder="Full Name" style="text-transform: capitalize;"></input>
                 <input type="email" class="py-2 bg-gray-200 rounded shadow-inner px-2 mt-2" placeholder="email" style="text-transform: capitalize;" required></input>
                 <div class="text-center">
@@ -38,17 +38,23 @@
                 <label for="male" class="p-2 ">M</label><input type="radio" name="gender" id="male">
                 <label for="female" class="p-2">F</label><input type="radio" name="gender" id="female">
                 </div>
+                    
 
+                    <div class="p-1 text-xl mx-auto lg:max-w-xs w-9/12 lg:w-10/12 sm:w-auto rems-10">
+                        <label for="prof" class="text-sm">Level:</label>
+                        <select name="prof" id="prof" class="bg-gray-200 rounded shadow-inner px-2 bt-1 focus:outline-none mb-3 text-sm">
+                            <option value="beginner">Beginner</option>
+                            <option value="intermidiate"><abbr title="aldfhosuhduh">Intermidiate</abbr></option>
+                            <option value="advanced">Advanced</option>
 
-                    <input type="range" name="belt" id="belt" value="50" step="50">
-
-                    <div class="p-1 text-xl mx-auto w-10/12">
-                        <div class="float-left text-green-600 fa fas fa-medal"></div>
-                        <div class="fa fa-medal text-blue-600"></div>
-                        <div class="float-right text-orange-400 fas fa-medal"></div>
-                    </div>
+                        </select>
                 
-                <textarea name="review" id="review" cols="17" rows="5" class="bg-gray-200 shadow-inner rounded p-3" placeholder="Tell us more about you..."></textarea>
+                <textarea name="review" id="review" cols="24" rows="5" class="bg-gray-200 shadow-inner text-sm rounded p-3" placeholder="tell us more about you..."></textarea>
+
+                <div class="text-center block">
+                <button type="submit" class="bg-green-400 px-3 py-1 shadow font-semibold m-3 text-white ">Submit</button>
+  
+                </div>
 
             </div>
 

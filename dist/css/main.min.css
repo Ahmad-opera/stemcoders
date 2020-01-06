@@ -6,6 +6,10 @@
   image-rendering: auto;
 }
 
+*:focus {
+  outline: none;
+}
+
 a {
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -40,9 +44,6 @@ nav {
 }
 
 @media screen and (min-width: 1024px) {
-  nav {
-    z-index: -20;
-  }
   nav ul {
     overflow: hidden;
     list-style-type: none;
@@ -219,4 +220,25 @@ nav {
     left: -100%;
     position: absolute;
   }
+}
+
+input[type=range] {
+  background: green;
+  cursor: pointer;
+  color: green;
+  max-width: 11rem;
+}
+
+@media screen and (max-width: 767px) {
+  input[type=range] {
+    max-width: auto;
+  }
+}
+
+.rems-10 {
+  max-width: 10rem;
+}
+
+input[type=range] {
+  max-width: 9rem;
 }

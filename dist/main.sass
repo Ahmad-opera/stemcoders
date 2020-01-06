@@ -3,6 +3,8 @@
     text-rendering: geometricPrecision
     shape-rendering: geometricPrecision
     image-rendering: auto
+    &:focus
+        outline: none
     
 
 a
@@ -27,7 +29,6 @@ nav
                 display: block
                 padding: 10px    
     @media screen and ( min-width: 1024px )
-        z-index: -20
         ul
             overflow: hidden
             list-style-type: none
@@ -148,3 +149,19 @@ nav
     @media screen and ( max-width: 767px )    
         left: -100%
         position: absolute
+
+
+input[type=range]
+    background: green
+    cursor: pointer
+    color: green
+    max-width: 11rem
+    @media screen and ( max-width: 767px )
+        max-width: auto
+
+
+.rems-10
+    max-width: 10rem
+
+input[type=range]
+        max-width: 9rem
